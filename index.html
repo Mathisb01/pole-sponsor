@@ -148,10 +148,11 @@ details summary{cursor:pointer;font-weight:700;list-style-position:inside}
   </div>
 </header>
 <main class="wrap" id="app"></main>
+<footer class="wrap small muted" style="padding-block:0 28px;text-align:center">Pôle Sponsor · version 8 · mise à jour automatique</footer>
 <div class="toast" id="toast" hidden></div>
 
 <script>
-window.__errs=[];var VERSION="v7";
+window.__errs=[];var VERSION="v8";
 function __showErr(m){try{window.__errs.push(m);var a=document.getElementById("app");if(a&&!a.dataset.ok){a.innerHTML='<section class="panel" style="--c:var(--red)"><h2>Le site n\'a pas pu démarrer</h2><p class="small">Envoie une capture de ce message à Mathis :</p><pre style="white-space:pre-wrap;font-size:12px;background:var(--bg);padding:10px;border-radius:8px">'+String(window.__errs.join("\n")).replace(/</g,"&lt;")+'</pre></section>'}}catch(_){}}
 window.addEventListener("error",function(e){__showErr((e.message||"Erreur")+(e.lineno?" (ligne "+e.lineno+", col "+e.colno+")":"")+" · "+VERSION)});
 window.addEventListener("unhandledrejection",function(e){var r=e.reason;__showErr("Promesse : "+(r&&(r.message||JSON.stringify(r))||r))});
